@@ -6,7 +6,7 @@ const template = `
 `
 const template1 = `Olá de novo ${nome}! Sabia que 2 + 2 ${2+2} não é peixe?`
 
-const up = texto => texto.toUppercase()
+const up = texto => texto.toUpperCase()
 
 console.log(concatenacao)
 console.log(template)
