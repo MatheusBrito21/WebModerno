@@ -17,7 +17,20 @@
         </ul>
     </div>
     <script>
-        // ...
+                                            // querySelector("#compras")
+        const lista = document.querySelector('#compras')
+        console.log('Elemento "ul".......')
+        console.log('childNodes',lista.childNodes)
+        console.log('destino',lista.destino)
+        console.log('getAttribute',lista.getAttribute('destino'))
+        console.log('hastAttribute',lista.hasAttribute('destino'))
+        
+        //altera um atribuo e/ou adiciona um
+        lista.setAttribute('destino','empresa')
+        console.log('getAttribute',lista.getAttribute('destino'))
+
+        lista.removeAttribute('destino')
+        console.log('getAttribute',lista.getAttribute('destino'))
     </script>
 </body>
 
