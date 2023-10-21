@@ -9,8 +9,20 @@
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
-    <script>              
-        // ...
+    <script>         
+    //metodos retornam um HTML collection, que podem ser convertidos em array     
+        document.getElementById('primeiro').classList.add('destaque')
+        const divs = document.getElementsByTagName('div')
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        const divs2 = [...divs]
+        divs2.forEach(e => e.classList.add('destaque'))
+
+        const ultimoElemnto = document.getElementsByClassName('ultimo')
+        for(let e of ultimoElemnto){
+            e.classList.remove('destaque')
+        }
+
     </script>
 </body>
 </html>
