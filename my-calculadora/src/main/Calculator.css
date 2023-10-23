@@ -1,0 +1,11 @@
+.calculator{
+    height: 320px;
+    width:235px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: red; */
+
+    display: grid;
+    grid-template-columns: repeat(4,25%);/*define a configuração das colunas - mostra 4 elementos por linha ocupando 25% do tamanho*/
+    grid-template-rows:1fr 48px 48px 48px 48px 48px;/*seta o tamanho de cada linha*/
+}
