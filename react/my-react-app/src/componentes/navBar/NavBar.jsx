@@ -5,7 +5,7 @@ import Pagina from "../Pagina/Pagina";
 
 
 function NavBar() {
-
+    
     function funciona(texto){
         alert(texto)
     }
