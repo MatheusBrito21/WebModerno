@@ -3,6 +3,8 @@ import Titulo from "./AlterandoTexto";
 import AnotherButton from "./OutroBotao";
 import NavBar from "./navBar/NavBar";
 import Pagina from "./Pagina/Pagina";
+import Contador from "./Contador";
+import { useState } from "react";
 
 function MyButton(props) {
 
@@ -20,6 +22,12 @@ export default function MyApp(props){
 
     const nomeApp = "Meu app React"
     let algo = ''
+    //contando juntos usando useState
+    const [count, setCount] = useState(0)
+
+    function contar() {
+        setCount(count +1)
+    }
 
     function outroBotao(){
         alert('Clicado pelo outro botao!')
@@ -40,6 +48,14 @@ export default function MyApp(props){
             <AnotherButton onClick={e=> setalgo("Welcome Home")} nome="Faz algo"/>
             <NavBar className="nav-container"/>
             <Pagina nome={nomeApp}/>
+
+            <h1>Contando separadamente</h1>
+            <Contador/> <br />
+            <Contador/>
+           
+            <h1>Contando Juntos</h1>
+            <Contador count={count} onClick={contar}/> <br />
+            <Contador count={count} onClick={contar}/> <br />
             
         </div>
 
