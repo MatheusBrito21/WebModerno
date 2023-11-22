@@ -5,6 +5,7 @@ import NavBar from "./navBar/NavBar";
 import Pagina from "./Pagina/Pagina";
 import Contador from "./Contador";
 import { useState } from "react";
+import Funcional from "./Funcional";
 
 function MyButton(props) {
 
@@ -56,6 +57,7 @@ export default function MyApp(props){
             <h1>Contando Juntos</h1>
             <Contador count={count} onClick={contar}/> <br />
             <Contador count={count} onClick={contar}/> <br />
+            <Funcional titulo = "Sei la mano"/>
             
         </div>
 
